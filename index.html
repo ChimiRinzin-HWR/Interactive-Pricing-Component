@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <main>
+      <div class="upper">
+        <div class="top">
+          <p class="viewsleft"><span class="views">0k</span> Pageviews</p>
+          <input
+            class="slider"
+            value="0"
+            type="range"
+            max="10"
+            min="0"
+            step="2"
+          />
+          <div class="topright">
+            <h1>$<span class="price">0.00</span></h1>
+            <p class="type">/ month</p>
+          </div>
+        </div>
+        <div class="lower">
+          <small>Monthly Billing</small>
+          <div class="toggle">
+            <input type="checkbox" id="toggle" />
+            <label class="togglel" for="toggle"></label>
+          </div>
+          <div class="yearly">
+            <small>Yearly Billing</small>
+            <p class="discount">25%</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <ul>
+          <li><p>Unlimited websites</p></li>
+          <li><p>100% data ownership</p></li>
+          <li><p>Email reports</p></li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.linkedin.com/in/chimi-rinzin-20178a291/
+      "
+          target="_blank"
+          >Chimi Rinzin</a
+        >.
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
